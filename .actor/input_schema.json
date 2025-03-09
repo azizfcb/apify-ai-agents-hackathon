@@ -1,0 +1,26 @@
+{
+  "title": "Rumble Videos Insights AI Agent",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "urls": {
+      "title": "Direct videos URLs and/or editor picks/trending URLs",
+      "type": "array",
+      "description": "Direct videos URLs and/or editor picks/trending URLs",
+      "editor": "stringList",
+      "prefill": [
+        "https://rumble.com/v6qba02-after-hours-w-girls.html?e9s=rel_v2_ep",
+        "https://rumble.com/v6qaltk-they-are-all-monsters-the-roseanne-barr-podcast-89.html?e9s=rel_v2_ep"
+      ]
+    },
+    "query": {
+      "title": "Custom AI query",
+      "type": "string",
+      "description": "Assuming data is scraped, ask the AI a custom query. If not set, the AI will provide insights based on the default insights query",
+      "editor": "textarea"
+    }
+  },
+  "required": [
+    "urls"
+  ]
+}

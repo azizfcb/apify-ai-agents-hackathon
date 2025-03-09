@@ -1,0 +1,12 @@
+{
+    "actorSpecification": 1,
+    "name": "rumble-videos-insights-ai-agent",
+    "title": "Rumble Videos Insights AI Agent",
+    "description": "Rumble Videos Insights AI Agent is a powerful tool that allows you to extract insights from videos using AI.",
+    "version": "0.0",
+    "meta": {
+        "templateId": "js-crawlee-playwright-chrome"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}

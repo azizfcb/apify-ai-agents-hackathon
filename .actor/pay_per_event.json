@@ -1,0 +1,22 @@
+{
+  "actor-start": {
+    "eventTitle": "Price for Actor start",
+    "eventDescription": "Flat fee for starting an Actor run.",
+    "eventPriceUsd": 0.05
+  },
+  "rumble-tool-call": {
+    "eventTitle": "Price for calling the Rumble scraping tool",
+    "eventDescription": "Flat fee for calling the Rumble scraping tool.",
+    "eventPriceUsd": 0.05
+  },
+  "custom-query-use": {
+    "eventTitle": "Price for using a custom query",
+    "eventDescription": "Flat fee for using a custom query.",
+    "eventPriceUsd": 0.05
+  },
+  "task-completed": {
+    "eventTitle": "Price for pushing the result to the dataset",
+    "eventDescription": "Flat fee for pushing the result to the dataset.",
+    "eventPriceUsd": 0.05
+  }
+}
