@@ -4,9 +4,9 @@ This AI agent is designed to provide insights on videos from the Rumble Videos d
 The agent uses gpt-4o-mini model, and it expects a valid OPENAI API key to be set in the environment variable `OPENAI_API_KEY`.
 
 ## Input
-The agent has two input:
+The agent has two inputs:
 - `startsUrls`: (required): directs videos URLs and/or editor links and/or trending pages as input
-- `query`: (optional): a custom query used to generate insights. If not set, the agent will generate insights based on the default insights schema detailed below:
+- `query`: (optional): a custom query used to generate insights. If not set, the agent will generate insights based on the default insights schema detailed described below.
 
 Note that this was developed as a part of Apify AI agents hackathon.
 
