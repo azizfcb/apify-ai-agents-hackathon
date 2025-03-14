@@ -12,7 +12,7 @@
     },
     "maxWords": {
       "title": "Max Words",
-      "type": "number",
+      "type": "integer",
       "editor": "number",
       "description": "Maximum length of the generated post (in words)",
       "default": 500
