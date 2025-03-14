@@ -21,8 +21,8 @@ let {
 
 dotenv.config();
 
-if (!process.env.OPENAI_API_KEY || !process.env.APIFY_TOKEN) {
-    throw new Error("Please provide OPENAI_API_KEY and APIFY_TOKEN in your environment variables");
+if (!process.env.OPENAI_API_KEY) {
+    throw new Error("Please provide OPENAI_API_KEY in your environment variables");
     process.exit(1);
 }
 
