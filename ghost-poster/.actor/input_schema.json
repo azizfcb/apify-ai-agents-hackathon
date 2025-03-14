@@ -1,0 +1,21 @@
+{
+  "title": "Generate Blog Post",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "pageUrlOrRawText": {
+      "title": "Page URL or Raw Text",
+      "type": "string",
+      "description": "URL of the page to crawl or raw HTML/Text content",
+      "editor": "textarea",
+      "prefill": "https://www.azaytek.com/ai-impacts-on-devops/"
+    },
+    "maxWords": {
+      "title": "Max Words",
+      "type": "number",
+      "editor": "number",
+      "description": "Maximum length of the generated post (in words)",
+      "default": 500
+    }
+  }
+}

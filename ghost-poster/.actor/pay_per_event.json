@@ -1,0 +1,22 @@
+{
+  "actor-start": {
+    "eventTitle": "Price for Actor start",
+    "eventDescription": "Flat fee for starting an Actor run.",
+    "eventPriceUsd": 0.02
+  },
+  "ghost-tool-call": {
+    "eventTitle": "Price for calling ghost CMS tool",
+    "eventDescription": "Flat fee for calling ghost CMS tool.",
+    "eventPriceUsd": 0.03
+  },
+  "scrape-tool-call": {
+    "eventTitle": "Price for scraping a page",
+    "eventDescription": "Flat fee for scraping a page.",
+    "eventPriceUsd": 0.03
+  },
+  "actor-dataset-push": {
+    "eventTitle": "Price for pushing to the dataset",
+    "eventDescription": "Flat fee for pushing to the dataset.",
+    "eventPriceUsd": 0.02
+  }
+}
