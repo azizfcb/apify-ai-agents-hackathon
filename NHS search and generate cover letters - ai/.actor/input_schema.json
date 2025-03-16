@@ -1,0 +1,24 @@
+{
+  "title": "Jobs Search & cover letter AI generator",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "searchUrl": {
+      "title": "jobs search results",
+      "type": "string",
+      "description": "URL of the job search results page",
+      "editor": "textfield",
+      "prefill": "https://www.jobs.nhs.uk/candidate/search/results?keyword=doctor&location=London&skipPhraseSuggester=true&contractType=Secondment&payRange=50-60&language=en"
+    },
+    "aboutMe": {
+      "title": "About Me",
+      "type": "string",
+      "description": "Tell us about yourself",
+      "editor": "textarea"
+    }
+  },
+  "required": [
+    "searchUrl",
+    "aboutMe"
+  ]
+}

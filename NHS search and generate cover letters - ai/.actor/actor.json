@@ -1,0 +1,12 @@
+{
+    "actorSpecification": 1,
+    "name": "Jobs portal search & generate cover letters",
+    "title": "Jobs portal search & generate cover letters",
+    "description": "This actor searches for jobs on a job portal, combines job details with the user's debrief, and generates personalized cover letters for each job.",
+    "version": "0.0",
+    "meta": {
+        "templateId": "js-crawlee-playwright-chrome"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}
