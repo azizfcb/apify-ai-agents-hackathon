@@ -12,19 +12,16 @@ await Actor.init();
 interface Input {
     urls: string;
     query?: string;
+    OPENAI_API_KEY: string;
 }
 
 let {
     urls, // only works with videos: so it accepts direct videos URL and/or trending/editor picks pages which list videos
-    query
+    query,
+    OPENAI_API_KEY
 } = await Actor.getInput() as Input;
 
 dotenv.config();
-
-if (!process.env.OPENAI_API_KEY) {
-    throw new Error("Please provide OPENAI_API_KEY in your environment variables");
-    process.exit(1);
-}
 
 const prompt = ChatPromptTemplate.fromMessages([
     ["system", "You are a helpful assistant. Your response are always valid JSON object with double quotes around keys and string values and use escape characters with no prefix at all"],  // System message defining the assistant's behavior
@@ -37,7 +34,7 @@ async function main() {
 
     const model = new ChatOpenAI({
         modelName: "gpt-4o-mini",
-        openAIApiKey: process.env.OPENAI_API_KEY,
+        openAIApiKey: OPENAI_API_KEY,
         temperature: 0.7,
     });
 

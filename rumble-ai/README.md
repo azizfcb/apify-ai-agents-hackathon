@@ -1,11 +1,12 @@
 # Rumble Videos Insights AI Agent
 This AI agent is designed to provide insights on videos from the Rumble Videos dataset, by leveraging the powerful [Rumble All-Inclusive Scraper](https://apify.com/azzouzana/rumble-all-inclusive-scraper)
 
-The agent uses gpt-4o-mini model, and it expects a valid OPENAI API key to be set in the environment variable `OPENAI_API_KEY`.
+The agent uses gpt-4o-mini model, and it expects a valid OPENAI API key to be set as input variable `OPENAI_API_KEY`.
 
 ## Input
 The agent has two inputs:
 - `url`: (required): directs videos URLs and/or editor links and/or trending pages as input
+- `OPENAI_API_KEY`: (required): The OpenAI API key to use
 - `query`: (optional): a custom query used to generate insights. If not set, the agent will generate insights based on the default insights schema detailed described below.
 
 Note that this was developed as a part of Apify AI agents hackathon.

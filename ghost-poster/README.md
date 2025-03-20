@@ -2,19 +2,15 @@
 
 This agent allows you to create a new post in your Ghost CMS blog using AI (V4). The actor uses the OpenAI GPT-4o-mini model to transform or summarize a given input source and uses the 🔗 [Ghost Blog Poster on Apify](https://apify.com/azzouzana/ghost-blog-poster) tool 🚀.
 
-To operate the agent, you need to:
-
-- Set up the required environment variables for `ghost-blog-poster` **before** running the actor:
-    - `GHOST_BASE_API_URL`: The base API URL of your Ghost blog (Format: `https://your-blog-domain/ghost/api/v4`).
-    - `GHOST_ADMIN_API_KEY`: The admin API key for your Ghost blog, which can be found or created in the Ghost admin panel under **Integrations** (Format: `xxxxx:yyyyy`).
-- Set your `OPENAI_API_KEY` in the agent's input.
-
 ## Input
 
 The actor expects the following inputs:
 
 - `pageUrlOrRawText` - string - the URL of the page or the raw text/HTML to summarize/reformulate
 - `maxWords` - number - the maximum number of words to generate. Default is `500`
+- `GHOST_BASE_API_URL`: The base API URL of your Ghost blog (Format: `https://your-blog-domain/ghost/api/v4`).
+- `OPENAI_API_KEY`: The admin API key for your OpenAI account.
+- `GHOST_ADMIN_API_KEY`: The admin API key for your Ghost blog, which can be found or created in the Ghost admin panel under **Integrations** (Format: `xxxxx:yyyyy`).
 
 Note that the blog post would be saved as a `draft` by default.
 

@@ -14,10 +14,16 @@ if (process.env.APIFY_IS_AT_HOME) {
 interface Input {
     pageUrlOrRawText: string,
     maxWords: number,
+    OPENAI_API_KEY: string,
+    GHOST_BASE_API_URL: string,
+    GHOST_ADMIN_API_KEY: string
 }
 
 let pageUrlOrRawText: string | undefined;
 let maxWords: number | undefined;
+let OPENAI_API_KEY: string | undefined;
+let GHOST_BASE_API_URL: string | undefined;
+let GHOST_ADMIN_API_KEY: string | undefined;
 
 if (!process.env.APIFY_IS_AT_HOME) {
     pageUrlOrRawText = "https://apify.com/azzouzana/ghost-blog-poster";
@@ -26,15 +32,12 @@ if (!process.env.APIFY_IS_AT_HOME) {
     let input = await Actor.getInput() as Input;
     pageUrlOrRawText = input.pageUrlOrRawText;
     maxWords = input.maxWords;
+    OPENAI_API_KEY = input.OPENAI_API_KEY;
+    process.env.GHOST_BASE_API_URL = input.GHOST_BASE_API_URL;
+    process.env.GHOST_ADMIN_API_KEY = input.GHOST_ADMIN_API_KEY;
 }
 
 dotenv.config();
-const {OPENAI_API_KEY} = process.env;
-
-if (!OPENAI_API_KEY) {
-    throw new Error("Please provide OPENAI_API_KEY in your environment variables!");
-    process.exit(1);
-}
 
 const prompt = ChatPromptTemplate.fromMessages([
     ["system", "You are a helpful assistant. Your response are always a simple, human sentence."],

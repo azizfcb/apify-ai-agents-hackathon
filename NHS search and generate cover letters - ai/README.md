@@ -20,6 +20,7 @@ The agent uses gpt-4o-mini model, and it expects a valid OPENAI API key to be se
 The agent has two input:
 - `url`: (required): The URL of the NHS job listings search page.
 - `aboutMe`: (required): A brief description of the user's skills and experience to be included in the cover letter.
+- `OPENAI_API_KEY`: (required): The OpenAI API key to use
 
 Note that this was developed as a part of Apify AI agents hackathon.
 
