@@ -15,6 +15,12 @@
       "type": "string",
       "description": "Tell us about yourself",
       "editor": "textarea"
+    },
+    "OPENAI_API_KEY": {
+      "title": "OpenAI API Key",
+      "type": "string",
+      "description": "API key for OpenAI",
+      "editor": "textfield"
     }
   },
   "required": [

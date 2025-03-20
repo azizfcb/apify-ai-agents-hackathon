@@ -16,6 +16,25 @@
       "editor": "number",
       "description": "Maximum length of the generated post (in words)",
       "default": 500
+    },
+    "OPENAI_API_KEY": {
+      "title": "OpenAI API Key",
+      "type": "string",
+      "description": "API key for OpenAI",
+      "editor": "textfield"
+    },
+    "GHOST_ADMIN_API_KEY": {
+      "title": "Ghost Admin API Key",
+      "type": "string",
+      "description": "API admin key for Ghost",
+      "editor": "textfield"
+    },
+    "GHOST_BASE_API_URL": {
+      "title": "Ghost Base API URL",
+      "type": "string",
+      "description": "Base URL of the Ghost API",
+      "editor": "textfield",
+      "prefill": "https://www.your-ghost-blog.com/ghost/api/v4"
     }
   }
 }

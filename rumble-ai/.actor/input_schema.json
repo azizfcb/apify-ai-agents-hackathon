@@ -18,6 +18,12 @@
       "type": "string",
       "description": "Assuming data is scraped, ask the AI a custom query. If not set, the AI will provide insights based on the default insights query",
       "editor": "textarea"
+    },
+    "OPENAI_API_KEY": {
+      "title": "OpenAI API Key",
+      "type": "string",
+      "description": "OpenAI API Key",
+      "editor": "textfield"
     }
   },
   "required": [
