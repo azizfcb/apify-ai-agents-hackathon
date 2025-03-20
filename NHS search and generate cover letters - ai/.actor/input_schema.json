@@ -24,7 +24,8 @@
     }
   },
   "required": [
-    "searchUrl",
-    "aboutMe"
+    "url",
+    "aboutMe",
+    "OPENAI_API_KEY"
   ]
 }
