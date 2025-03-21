@@ -8,7 +8,7 @@
       "type": "string",
       "description": "URL of the job search results page",
       "editor": "textfield",
-      "prefill": "https://www.jobs.nhs.uk/candidate/search/results?keyword=doctor&location=London&skipPhraseSuggester=true&contractType=Secondment&payRange=50-60&language=en"
+      "prefill": "https://www.jobs.nhs.uk/candidate/search/results?keyword=doctor&location=London&skipPhraseSuggester=true&payRange=10-20&language=en"
     },
     "aboutMe": {
       "title": "About Me",
