@@ -19,7 +19,7 @@ const publishGhostCMSBlogPost = tool(
         const json = JSON.parse(input);
         json.GHOST_BASE_API_URL = process.env.GHOST_BASE_API_URL;
         json.GHOST_ADMIN_API_KEY = process.env.GHOST_ADMIN_API_KEY;
-        const run = await client.actor("azzouzana/ghost-blog-poster").call();
+        const run = await client.actor("azzouzana/ghost-blog-poster").call(json);
 
         console.log(`💾 Check your data here: https://console.apify.com/storage/datasets/${run.defaultDatasetId}`);
 

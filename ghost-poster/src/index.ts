@@ -22,8 +22,6 @@ interface Input {
 let pageUrlOrRawText: string | undefined;
 let maxWords: number | undefined;
 let OPENAI_API_KEY: string | undefined;
-let GHOST_BASE_API_URL: string | undefined;
-let GHOST_ADMIN_API_KEY: string | undefined;
 
 if (!process.env.APIFY_IS_AT_HOME) {
     pageUrlOrRawText = "https://apify.com/azzouzana/ghost-blog-poster";
