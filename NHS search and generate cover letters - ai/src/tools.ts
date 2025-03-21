@@ -29,7 +29,7 @@ const scrapeNHSSearchPages = tool(
     },
     {
         name: "scrapeNHSSearchPages",
-        description: "Accepts a nhsSearchPageUrl url & scrapes it, returning the results as a JSON string",
+        description: "Accepts a nhsSearchPageUrl url & scrapes it, returning the results as a JSON string. The expected url must be a search page from the NHS website: respecting this format: https://www.jobs.nhs.uk/candidate/search/...",
     }
 );
 
