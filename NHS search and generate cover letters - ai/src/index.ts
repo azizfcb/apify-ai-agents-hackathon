@@ -26,7 +26,7 @@ const prompt = ChatPromptTemplate.fromMessages([
     ["system", "You are a helpful assistant. Your response are always valid JSON object with double quotes around keys and string values and use escape characters with no prefix at all"],  // System message defining the assistant's behavior
     ["human", 'Given a URL of jobs search results {url}, scrape it, analyze the results, combine them with user debrief [{aboutMe}] and generate a personalized cover letter for each one. Output format is a valid json for each job: with key "job_url" & value "cover_letter" .' +
     "If an error happens, just return the error message." +
-    "Important notice: Run the tool to scrape only the search results url and do not scrape individual job pages!!!! PLease!!!" +
+    'Important notice: Run the tool to scrape only the search results url and do not scrape individual job pages!!!! PLease!!! ONLY scrape URL in this format "https://www.jobs.nhs.uk/candidate/search/..." ' +
     "The cover letter should not include any special character like \\n etc." +
     "Include pertinent information from the job listing in the cover letter (hiring manager name, job title, skills etc.)" +
     "return a simple array of objects with keys job_url and cover_letter"],
